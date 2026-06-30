@@ -1,0 +1,12 @@
+# 共用
+pandas
+numpy
+
+# 網頁版 (coordinate_viewer.py, Streamlit)
+streamlit
+plotly
+
+# 桌面版 (coordinate_viewer_desktop.py, PyQt5 + pyqtgraph)
+PyQt5
+pyqtgraph
+pyqtdarktheme
