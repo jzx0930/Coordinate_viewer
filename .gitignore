@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# 打包/壓縮
+*.zip
+
+# 實際量測/座標資料與產出（不上傳工作資料）
+ProgramObjects/
+20260623*/
+*-入射_*.csv
+*-出射_*.csv
+DrillDataSet*.csv
+*_整理*.csv
+*_矩形*.csv
+
+# Streamlit 機密（保留 config.toml）
+.streamlit/secrets.toml
+
+# OS / 編輯器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

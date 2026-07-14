@@ -27,16 +27,16 @@ if not exist "%USERPROFILE%\.streamlit\credentials.toml" (
 )
 
 REM --- Check packages; install only if missing ---
-%PY% -c "import streamlit, plotly, pandas" >nul 2>&1
+%PY% -c "import streamlit, plotly, pandas, openpyxl" >nul 2>&1
 if errorlevel 1 goto :install
 goto :run
 
 :install
-echo First run: installing streamlit / plotly / pandas ...
+echo First run: installing streamlit / plotly / pandas / openpyxl ...
 echo This may take a few minutes. Please wait.
 echo.
 %PY% -m pip install --upgrade pip
-%PY% -m pip install streamlit plotly pandas
+%PY% -m pip install streamlit plotly pandas openpyxl
 if errorlevel 1 goto :installfail
 echo.
 echo Installation done.

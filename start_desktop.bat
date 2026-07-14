@@ -18,16 +18,16 @@ if not defined PY goto :nopython
 echo Using Python: %PY%
 echo.
 
-%PY% -c "import pandas, numpy, pyqtgraph, PyQt5, qdarktheme" >nul 2>&1
+%PY% -c "import pandas, numpy, pyqtgraph, PyQt5, qdarktheme, openpyxl" >nul 2>&1
 if errorlevel 1 goto :install
 goto :run
 
 :install
-echo First run: installing pandas / numpy / pyqtgraph / PyQt5 / pyqtdarktheme ...
+echo First run: installing pandas / numpy / pyqtgraph / PyQt5 / pyqtdarktheme / openpyxl ...
 echo This may take a few minutes. Please wait.
 echo.
 %PY% -m pip install --upgrade pip
-%PY% -m pip install pandas numpy pyqtgraph PyQt5 pyqtdarktheme
+%PY% -m pip install pandas numpy pyqtgraph PyQt5 pyqtdarktheme openpyxl
 if errorlevel 1 goto :installfail
 echo.
 echo Installation done.

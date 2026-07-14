@@ -1,6 +1,7 @@
 # 共用
 pandas
 numpy
+openpyxl        # 讀取量測 .xlsx 檔
 
 # 網頁版 (coordinate_viewer.py, Streamlit)
 streamlit
